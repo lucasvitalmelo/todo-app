@@ -1,14 +1,10 @@
-import { Router } from 'express';
+import { Router } from "express";
+import listController from "./controllers/listController";
 
 const routes = Router();
 
-const lista:Object[] = []
+routes.get("/", listController.getAll);
+routes.post("/", listController.save);
+routes.put("/:id", listController.update);
 
-routes.post("/", (req, res) => {  	
-  lista.push({
-    ...req.body,
-    isCompleted: false 
-  })
-  res.json(lista)
-})
-export default routes
+export default routes;
