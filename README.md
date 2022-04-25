@@ -13,8 +13,14 @@ Personal motivation to create this project is:
 
 ## Application requirements
 
-In progress...
+- User can create lists without authentication
+- The app will persist data if authenticated
+- The app will use an authentication system
 
 ## Business requirements
 
-In progress...
+- Have list grouping
+- Lists separated by user
+- Each user will only see their own lists
+- A user can have multiple lists
+- A list can have multiple tasks
